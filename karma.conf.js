@@ -2,7 +2,7 @@
 // Generated on Fri Nov 03 2017 22:11:05 GMT-0200 (Horário brasileiro de verão)
 
 module.exports = function(config) {
-  var configuration = {
+  config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
@@ -67,17 +67,5 @@ module.exports = function(config) {
     // Concurrency level
     // how many browser should be started simultaneous
     concurrency: Infinity
-  };
-
-  // if(process.env.TRAVIS){
-  //   configuration.browsers = ['Chrome_travis_ci'];
-  //   // configuration.reporters = configuration.reporters.concat(['coverage', 'coveralls']);
-  //   // configuration.coverageReporter = {
-  //   //   type : 'lcovonly',
-  //   //   dir : 'coverage/'
-  //   // };
-  // }
-
-  config.set(configuration);
-
+  })
 }
