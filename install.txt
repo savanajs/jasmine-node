@@ -1,0 +1,90 @@
+Criar projeto
+--------------------------------------------
+
+cmd:
+npm init
+npm init -y - Sem assistente
+
+Cria o package.json
+-------------------------------------------
+
+============================================
+Crie o dir do projeto
+============================================
+mkdir jasmine-node
+
+Acessar dir
+-------------
+cd jasmine-node
+
+Criar arquivo package.json
+
+============================================
+Instalando o Jasmine
+============================================
+
+npm install --save-dev jasmine
+npm install -g jasmine
+jasmine -v
+
+
+============================================
+Configuração do Jasmine
+============================================
+Crie um dir spec na raiz do projeto
+
+Criar o jasmine.json (spec/support/jasmine.json)
+------------------------------------------------
+jasmine init 
+
+Executar testes
+------------------------------------------------
+Comando:
+jasmine ou npm run test
+
+Adicionar Suite de exemplo de testes no jasmine
+================================================
+jasmine examples
+
+============================================
+Instalando o Karma
+============================================
+npm install --save-dev karma
+npm install --save-dev karma-jasmine
+npm install --save-dev karma-firefox-launcher
+npm install -g karma-cli
+
+karma --version
+
+============================================
+Configurando o Karma
+============================================
+
+karma init karma.conf.json
+
+Responda as questões conforme segue
+
+2.1 jasmine
+2.2 no
+2.3 firefox
+2.4 spec/**/*Spec.js
+2.5 Digite ENTER
+2.6 yes
+
+Visualize o arquivo "karma.conf.js" gerado
+
+============================================
+Iniciar o Karma
+============================================
+karma start
+
+Saida
+-----
+ctrl + C
+
+============================================
+Instalar o browserify o Karma
+============================================
+npm install --save-dev browserify
+npm install --save-dev watchify
+npm install --save-dev karma-browserify
